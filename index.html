@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1">
+	<title>Final Quiz App</title>
+</head>
+
+<body>
+<div class="start-page" data-page="start">
+	<header class='header' role='banner'>
+		<h1 class='title'>Basketball Quiz - 12 Questions</h1>
+	</header>
+
+	<div class="menu-begin">
+	<button type="button" class="intro-begin" id="js-intro-begin">Begin</button>
+	</div>
+
+</div>
+
+<div class ="quiz" data-page="question">
+	<form class="questions">
+		<div class="trackers">
+			<p class="score-tracker">Correct: X out of 12</p>
+			<p class="progress-tracker">Question X of 12:</p>
+		</div>
+		<fieldset>
+			<legend>
+				<span class="question-text">Placeholder</span>
+			</legend>
+
+			<div class="input-group">
+				<input type="radio" name="answer" id="answer-1" value="0" required/>
+				<label for="answer-1">Placeholder 1</label>
+			</div>
+			<div class="input-group">
+				<input type="radio" name="answer" id="answer-2" value="1" required/>
+				<label for="answer-2">Placeholder 2</label>
+			</div>
+			<div class="input-group">
+				<input type="radio" name="answer" id="answer-3" value="2" required/>
+				<label for="answer-3">Placeholder 3</label>
+			</div>
+			<div class="input-group">
+				<input type="radio" name="answer" id="answer-4" value="3" required/>
+				<label for="answer-4">Placeholder 4</label>
+			</div>
+		</fieldset>
+		<button type="submit" class="question-submit">Submit</button>
+	</form>
+
+	
+	
+
+	<div class="feedback" data-page="feedback">
+		<p class = "feedback-text"></p>
+		<button class="next-question">Next</button>
+
+	</div>
+</div>
+
+<div class="results" data-page="results">
+	<p class = "result-text">Congratulations, you got __ out of 12 correct!</p>
+	<button type="button" class="restart-button">Restart Quiz</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
